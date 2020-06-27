@@ -9,6 +9,7 @@ verify_ssl = true
 numpy = "*"
 pytest = "*"
 algorhms = {path = "."}
+collections-extended = "*"
 
 [requires]
 python_version = "3.7"
