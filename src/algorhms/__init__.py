@@ -6,4 +6,8 @@ from .dfs_partial_sum import(
     dfs_partial_sum
 )
 
+from .bfs import(
+    bfs
+)
+
 __version__ = "0.1.0"
