@@ -1,9 +1,9 @@
-def binary_search(array:list, target:float) -> bool:
+def binary_search(array:list, target:int) -> bool:
     """二分探索
 
     Args:
         array (list):　検索対象の配列
-        target (float): 探したい値
+        target (int): 探したい値
 
     Returns:
         bool: True（探したい値が含まれている）、False（含まれていない）
