@@ -3,9 +3,9 @@ def dfs_partial_sum(array:list, sum_judge:int, position:int = 0, sum_search:int 
 
     Args:
         array (list): 入力の配列
-        sum_judge (float): 判定したい部分和
+        sum_judge (int): 判定したい部分和
         position (int): 現在調査してるindex（外部から最初に関数を使う場合は０）
-        sum_search (float): 現在の部分和（外部から最初に関数を使う場合は０）
+        sum_search (int): 現在の部分和（外部から最初に関数を使う場合は０）
 
     Returns:
         bool: True(部分和問題成立)/False(不成立)
