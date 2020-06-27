@@ -8,13 +8,20 @@ def binary_search(array:list, target:float) -> bool:
     Returns:
         bool: True（探したい値が含まれている）、False（含まれていない）
     """    
-    low = array[0]
-    high = array[-1]
+    low = 0
+    high = len(array)-1
+    
+    if target == array[low] or target == array[high]:
+        return True
+
     while low <= high:
         mid = (low + high) // 2
-        if target >= low and target < mid:
+        if target == array[mid]:
+            return True
+        
+        if target > array[low] and target < array[mid]:
             high = mid
-        elif target >= mid and target <= high:
+        elif target > array[mid] and target < array[high]:
             low = mid
         else:
             return False
