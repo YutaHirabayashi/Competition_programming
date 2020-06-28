@@ -13,6 +13,10 @@ def dfs_partial_sum(array:list, sum_judge:int, position:int = 0, sum_search:int 
     #全ての配列のTrue／Falseを決定した場合、部分和が成立しているかチェックする（次の値へは進まない）
     if position == len(array) - 1:
         return sum_judge == sum_search
+
+    #枝刈り（現時点で判定したい部分和を超えてる場合、この枝の先に解はないので戻る）
+    if sum_search > sum_judge:
+        return False
     
     #position番目をTrueとする場合->部分和に追加してposition+1番目の配列に進む
     if dfs_partial_sum(array, sum_judge, position + 1, sum_search + array[position]):
