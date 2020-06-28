@@ -16,7 +16,8 @@ from .greedy import(
 )
 
 from .dp import (
-    dp_knapsack
+    dp_knapsack,
+    dp_partial_sum
 )
 
 __version__ = "0.1.0"
