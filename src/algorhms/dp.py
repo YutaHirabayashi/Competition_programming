@@ -54,7 +54,7 @@ def dp_partial_sum(array:list, sum_judge:int)->bool:
     for i in reversed(range(N)):
         for j in range(sum_judge + 1):
             
-            if array[i] > sum_judge: #足す余地なし
+            if array[i] > j: #足す余地なし
                 dp[j][i] = dp[j][i + 1]
             else:
                 dp[j][i] = dp[j][i+1] or dp[j - array[i]][i+1]
