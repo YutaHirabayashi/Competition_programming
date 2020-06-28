@@ -10,4 +10,8 @@ from .bfs import(
     bfs
 )
 
+from .greedy_coin import(
+    greedy_coin
+)
+
 __version__ = "0.1.0"
