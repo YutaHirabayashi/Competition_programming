@@ -1,4 +1,4 @@
-from algorhms import greedy_coin
+from algorhms import greedy_coin, greedy_dictionary
 import pytest
 
 @pytest.mark.parametrize("own_coin_number_dict, price, expected", [
@@ -7,3 +7,11 @@ import pytest
 
 def test_greedy_coin(own_coin_number_dict, price, expected):
     assert greedy_coin(own_coin_number_dict, price) == expected
+
+@pytest.mark.parametrize("from_str_list, expected", [
+    (["C", "D", "B", "A", "C"],
+    ["C", "A", "B", "C", "D"])
+])
+
+def test_greedy_dictionary(from_str_list, expected):
+    assert greedy_dictionary(from_str_list) == expected

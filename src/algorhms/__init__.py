@@ -10,8 +10,9 @@ from .bfs import(
     bfs
 )
 
-from .greedy_coin import(
-    greedy_coin
+from .greedy import(
+    greedy_coin,
+    greedy_dictionary
 )
 
 __version__ = "0.1.0"
