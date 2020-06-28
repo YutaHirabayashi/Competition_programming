@@ -15,4 +15,8 @@ from .greedy import(
     greedy_dictionary
 )
 
+from .dp import (
+    dp_knapsack
+)
+
 __version__ = "0.1.0"
