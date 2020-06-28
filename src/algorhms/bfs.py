@@ -1,6 +1,6 @@
 from collections import deque
 
-def bfs(start_node:int, node_number:int, edge_tuple_list:list):
+def bfs(start_node:int, node_number:int, edge_tuple_list:list) -> list:
     """BFS
 
     Args:

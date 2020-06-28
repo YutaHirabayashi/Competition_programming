@@ -1,4 +1,4 @@
-def dfs_partial_sum(array:list, sum_judge:int, position:int = 0, sum_search:int = 0):
+def dfs_partial_sum(array:list, sum_judge:int, position:int = 0, sum_search:int = 0) -> bool:
     """部分和問題をDFSで解く（再帰関数）
 
     Args:
